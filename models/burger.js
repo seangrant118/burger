@@ -5,6 +5,12 @@ const burger = {
     orm.selectAll("burgers", (res) => {
       cb(res);
     })
+  },
+
+  addOne: (cols, vals, cb) => {
+    orm.addOne("burgers", cols, vals, (res) => {
+      cb(res);
+    })
   }
 }
 
